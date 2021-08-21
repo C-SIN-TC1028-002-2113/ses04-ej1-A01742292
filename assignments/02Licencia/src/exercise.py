@@ -1,13 +1,20 @@
 def main():
     #escribe tu código abajo de esta línea
-    edad=float(input("Edad:"))
-    id=float(input("¿Tienes identificacion oficial? (s/n): "))
-    if edad>=18 and id=="s"
-    print("Tramite de licencia concedido")
-    elif edad<=0 or id!="s" or "n"
-    print("Respuesta incorrecta")
-    else
-    print("No cumples con los requisitos")
-        pass
+    edad = int (input("Ingresa tu edad :"))
+
+    if edad>0:
+        if edad>=18:
+            ident = (input("¿Tienes identificacion oficial? (s/n): "))
+            if ident == "s":
+                print("Tramite de licencia concedido")
+            elif ident == "n":
+                print("No cumples requisitos")
+            else:
+                print("Respuesta incorrecta")
+        else:
+            print("No cumples requisitos")
+    else:
+        print("Respuesta incorrecta")
+
 if __name__ == '__main__':
     main()
